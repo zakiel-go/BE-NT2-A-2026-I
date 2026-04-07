@@ -20,4 +20,10 @@ Para iniciar el proyecto vamos crearnos una cuenta en github. A continuacion la 
 
 # Listado de participantes:
 
-Sofia Soler, sofisolerort
+- Sofia Soler, sofisolerort
+- Lautaro, Nola, lautaronola
+- Hector de la Fuente, delafuentehector
+- Daniel Guzman, dguzman-ort.
+- Ezequiel Grynberg, ezemg
+- Zakiel Gimenez, zakiel-go. 
+- Francisco Bermingham, franbermingham
