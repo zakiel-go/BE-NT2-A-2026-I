@@ -1,4 +1,4 @@
-import { personas } from './personas.js'
+import { personas } from './personas'
 
 /**
  * Hacer una funcion que dado un Array de participantes del curso, 
