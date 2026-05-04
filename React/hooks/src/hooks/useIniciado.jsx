@@ -6,8 +6,12 @@ import { useState, useContext } from "react"
 export const IniciadoProvider = ({ children }) => {
     const [isRunning, setIsRunning] = useState(false)
 
+    const toggleIsRunning = () => {
+        setIsRunning(!isRunning)
+    }
+
     return (
-        <globalContext.Provider value={{ isRunning, setIsRunning }}>
+        <globalContext.Provider value={{ isRunning, toggleIsRunning }}>
             {children}
         </globalContext.Provider>
     )

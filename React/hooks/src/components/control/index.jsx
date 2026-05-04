@@ -1,15 +1,11 @@
 import { useIniciado } from "../../hooks/useIniciado"
 
 const Control = () => {
-  const { isRunning, setIsRunning } = useIniciado()
-
-  const handleStartPause = () => {
-    setIsRunning(!isRunning)
-  }
+  const { isRunning, toggleIsRunning } = useIniciado()
 
   return (
     <div className="control card">
-      <button type="button" onClick={handleStartPause}>{isRunning ? 'Pause' : 'Start'}</button>
+      <button type="button" onClick={toggleIsRunning}>{isRunning ? 'Pause' : 'Start'}</button>
       <button type="button">Reset</button>
     </div>
   )
