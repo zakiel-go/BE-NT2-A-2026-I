@@ -5,9 +5,10 @@ import { useState, useContext } from "react"
  */
 export const IniciadoProvider = ({ children }) => {
     const [isRunning, setIsRunning] = useState(false)
+    const [reset, setReset] = useState(false)
 
     return (
-        <globalContext.Provider value={{ isRunning, setIsRunning }}>
+        <globalContext.Provider value={{ isRunning, setIsRunning, reset, setReset }}>
             {children}
         </globalContext.Provider>
     )

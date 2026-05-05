@@ -7,7 +7,20 @@ import { IniciadoProvider } from './hooks/useIniciado'
 function App() {
 
   
-  // const [name, setName] = useState('')
+  
+
+  return (
+    <IniciadoProvider>
+      <Cronometro />
+      <Control />
+    </IniciadoProvider>
+  )
+}
+
+export default App
+
+
+// const [name, setName] = useState('')
   
   // useEffect(() =>{
   //   console.log('1.- MOUNTING - Inincio del componente')
@@ -30,13 +43,3 @@ function App() {
   // useEffect(() =>{
   //   console.log('5.- UPDATE - Actualización del componente', count, name)
   // }, [count, name])
-
-  return (
-    <IniciadoProvider>
-      <Cronometro />
-      <Control />
-    </IniciadoProvider>
-  )
-}
-
-export default App
